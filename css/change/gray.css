@@ -1,0 +1,65 @@
+:root {
+  --text-color: #525552;
+  --radial-gradient: radial-gradient(rgba(133, 133, 133, 0.4),rgba(224, 224, 224, 0.8));
+  --font-family: 'Short Stack';
+  --box-shadow: -4px -4px 10px rgba(255, 255, 255, 1),
+                  inset -4px 4px 10px rgba(148, 155, 146, 0.5), 
+                  inset -4px -4px 10px rgba(255, 255, 255, 1), 
+                  4px 4px 10px rgba(149, 155, 148, 0.5);
+}
+
+body {
+  overflow-x: hidden;
+  font-family: var(--font-family);
+  background: #c7c7c7;
+}
+
+nav .navbar ul li a:hover, nav .navbar ul li .active { 
+  border: 2px solid #7e7e85 !important; 
+  background: #646468 !important;
+}
+
+::-moz-selection {
+  -webkit-text-stroke: 0px;
+  text-shadow: 2px 2px 2px #4b4b4b;
+}
+
+::selection {
+  -webkit-text-stroke: 0px;
+  text-shadow: 2px 2px 2px #4b4b4b;
+}
+
+h3 {
+  background: -webkit-gradient(linear, left top, left bottom, from(#727471), to(white));
+  background: linear-gradient(#727471, white);
+  color: transparent;
+  -webkit-text-stroke: 1px #797979;
+  -webkit-background-clip: text;
+}
+
+img {
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+}
+
+.nav_background {
+  background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(#888888));
+  background: linear-gradient(to bottom, transparent, #888888);
+}
+
+.container2 h4 {
+  background: -webkit-gradient(linear, left top, left bottom, from(#666965), to(white));
+  background: linear-gradient(#666965, white);
+  color: transparent;
+  -webkit-text-stroke: 1px #797979;
+  -webkit-background-clip: text;
+}
+
+.container h4 {
+  background: -webkit-gradient(linear, left top, left bottom, from(white), to(#6d706d));
+  background: linear-gradient(white, #6d706d);
+  color: transparent;
+  -webkit-text-stroke: 1px #797979;
+  -webkit-background-clip: text;
+}
+/*# sourceMappingURL=gray.css.map */

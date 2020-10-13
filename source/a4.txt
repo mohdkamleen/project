@@ -1,0 +1,114 @@
+
+Assignment four
+
+1. Write a program in c to display this pattern
+*
+* *
+* * *
+* * * *
+* * * * *
+
+        #include <stdio.h>
+            main()
+            {
+                int i,j;
+                for(i = 1; i <= 5; i++){
+                  for(j = 1; j <= i; j++){
+                      printf("*");
+                  }
+                  printf("\n");
+                }	
+            }
+
+             
+
+2. Write a program in c to display this pattern
+* * * * *
+* * * *
+* * *
+* *
+*
+
+    #include <stdio.h>
+    main()
+    {
+        int i,j;
+        for(i = 5; i >= 1; i--){
+          for(j = i; j >= 1; j--){
+              printf("*");
+          }
+          printf("\n");
+        }	
+    }
+
+     
+
+3. Write a program in c to display this pattern
+1
+1 2
+1 2 3
+1 2 3 4
+1 2 3 4 5
+
+        #include<stdio.h>
+        main()
+        {
+            int i,j;
+            for(i = 1; i <= 5; i++){
+            for(j = 1; j <= i; j++){
+                printf("%d", j);
+            }
+            printf("\n");
+            }	
+        }
+
+    
+
+4. Write a program in c to display this pattern
+1 2 3 4 5
+1 2 3 4
+1 2 3
+1 2
+1
+
+    #include <stdio.h>
+    main()
+    {
+        int i,j;
+        for(i = 5; i >= 1; i--){
+          for(j = 1; j <= i; j++){
+              printf("%d", j);
+          }
+          printf("\n");
+        }	
+    }
+    
+     
+
+5. Write a program in c to display this pattern
+*
+* * *
+* * * * *
+* * * * * * *
+* * * * * * * * *
+
+    #include<stdio.h>
+        int main()
+        {
+        int row, c;
+        for ( row = 1 ; row <= 5 ; row++ )
+        {
+        for ( c = 1 ; c < 5 ; c++ )
+        printf(" ");
+        for ( c = 1 ; c <= 2*row - 1 ; c++ )
+        printf("*");
+        printf("\n");
+        }
+        
+        return 0;
+        }
+        
+            
+     
+
+

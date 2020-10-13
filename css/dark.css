@@ -1,0 +1,62 @@
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text-color: #797979;
+    --radial-gradient: radial-gradient(rgba(27, 27, 27, 0.4),rgba(255, 255, 255, 0.8));
+    --font-family: 'Short Stack';
+    --box-shadow: -4px -4px 10px rgba(255, 255, 255, 1),
+                      inset -4px 4px 10px rgba(119, 119, 119, 0.5), 
+                      inset -4px -4px 10px rgba(255, 255, 255, 1), 
+                      4px 4px 10px rgba(104, 104, 104, 0.5);
+  }
+  body {
+    background: #333333;
+    overflow-x: hidden;
+    font-family: var(--font-family);
+  }
+  ::-moz-selection {
+    -webkit-text-stroke: 0px;
+    text-shadow: 2px 2px 2px #a0a0a0;
+  }
+  ::selection {
+    -webkit-text-stroke: 0px;
+    text-shadow: 2px 2px 2px #a0a0a0;
+  }
+  h3 {
+    background: -webkit-gradient(linear, left top, left bottom, from(#a3a3a3), to(white));
+    background: linear-gradient(#a3a3a3, white);
+    color: transparent;
+    -webkit-text-stroke: 1px #797979;
+    -webkit-background-clip: text;
+  }
+  a {
+    color: var(--text-color) !important;
+  }
+  .nav_background {
+    background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(#5f5f5f));
+    background: linear-gradient(to bottom, transparent, #5f5f5f);
+  }
+  .container2 h4 {
+    background: -webkit-gradient(linear, left top, left bottom, from(#5c5c5c), to(white));
+    background: linear-gradient(#5c5c5c, white);
+    color: transparent;
+    -webkit-text-stroke: 1px #797979;
+    -webkit-background-clip: text;
+  }
+  .container h4 {
+    background: -webkit-gradient(linear, left top, left bottom, from(white), to(#363636));
+    background: linear-gradient(white, #363636);
+    color: transparent;
+    -webkit-text-stroke: 1px #797979;
+    -webkit-background-clip: text;
+  }
+  img {
+    -webkit-filter: grayscale(1);
+            filter: grayscale(1);
+  }
+  nav .navigation .logo {  
+    -webkit-text-stroke: 1px rgba(235, 235, 235, 0.644) ; 
+  }
+  nav .navigation .logo span {  
+    -webkit-text-stroke: 1px rgba(91, 118, 236, 0.644) ; 
+  }
+} 

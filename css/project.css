@@ -1,0 +1,325 @@
+#main_div {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 100%;
+  overflow-x: hidden;
+} 
+
+.nav_background {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 90%;
+  width: 90%;
+  z-index: -1;
+  -webkit-clip-path: circle(90vh at 80% -2vh);
+          clip-path: circle(90vh at 80% -2vh);
+  background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(#888888));
+  background: linear-gradient(to bottom, transparent, #888888); 
+  transform-origin: right top;
+  transform: scale(.2);
+  transition: all .1s ease;
+} 
+
+.nav_background.show{
+  animation: nav_back_animate 1s 2s ease forwards;
+} 
+
+@keyframes nav_back_animate{
+  to{ 
+    transform: scale(1);
+  }
+}
+
+.nav_hamburger_background {
+  position: fixed;
+  top: 5px;
+  right: 5px;
+  height: 90px;
+  width: 100px;
+  background: var(--radial-gradient);
+  z-index: -2;
+  display: none;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transform-origin: right top;
+          transform-origin: right top;
+  -webkit-transition: -webkit-transform .5s ease;
+  transition: -webkit-transform .5s ease;
+  transition: transform .5s ease;
+  transition: transform .5s ease, -webkit-transform .5s ease;
+  border-radius: 62% 10% 49% 100% / 68% 47% 44% 90%;
+}
+
+.nav_hamburger_background.show {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.body_content_header .header_top {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+img.nav_background_img {
+  margin-right: 9rem;
+  margin-top: 9rem;
+  height: 350px;
+  z-index: -3;
+}
+
+.about-me {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  min-width: 400px;
+  padding: 3rem 0rem;
+}
+
+h3 {
+  font-size: 1.4rem;
+  font-weight: 400;
+  padding: 5%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#0355f8), to(white));
+  background: linear-gradient(#0355f8, white);
+  color: transparent;
+  -webkit-text-stroke: 1px #797979;
+  -webkit-background-clip: text;
+}
+
+h3 span {
+  font-size: 1.5rem;
+  color: #3e3e3f;
+  -webkit-text-stroke: 1px #79797c;
+}
+
+.comment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 50px;
+  width: 100%;
+}
+
+.comment input {
+  font-size: 20px;
+  padding: 10px;
+  border: 2px solid gray;
+  border-top-right-radius: 0px !important;
+  border-bottom-right-radius: 0px !important;
+  border-radius: 10px;
+  background: transparent;
+}
+
+.comment input:focus {
+  -webkit-box-shadow: var(--box-shadow);
+          box-shadow: var(--box-shadow);
+}
+
+.comment form {
+  min-width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+button {
+  font-size: 20px;
+  padding: 5px 20px;
+  margin: 5px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  -webkit-box-shadow: var(--box-shadow);
+          box-shadow: var(--box-shadow);
+  -webkit-transition: all .3s easy;
+  transition: all .3s easy;
+}
+
+.comment input[type="submit"] {
+  background: var(--radial-gradient);
+  -webkit-box-shadow: var(--box-shadow);
+          box-shadow: var(--box-shadow);
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-top-right-radius: 10px !important;
+  border-bottom-right-radius: 10px !important;
+}
+
+a {
+  color: #555555;
+  text-decoration: none;
+}
+
+button:hover {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background: var(--radial-gradient);
+}
+
+/* gone to top button  */
+/* #scroll_top a{
+  position: fixed;
+  border-radius: 50%;
+  bottom: 30px;
+  right: 30px;
+  height: 50px;
+  width: 50px;
+  background: var(--radial-gradient); 
+  z-index: 1;
+  line-height: 50px;
+  text-align: center;
+  font-size: 1.4rem;
+  box-shadow: var(--box-shadow);
+} */
+
+@media (max-width: 700px) {
+  .nav_hamburger_background {
+    display: block;
+  }
+  .nav_background {
+    width: 99%;
+    -webkit-clip-path: circle(70vh at 90% -25vh);
+            clip-path: circle(70vh at 90% -25vh);
+  }
+  img.nav_background_img {
+    display: block;
+    width: 70%;
+    margin: auto;
+  }
+  .body_content_header .header_top {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  h3 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 1000px) and (min-width: 700px) {
+  .nav_background {
+    width: 85%;
+    -webkit-clip-path: circle(90vh at 135% -10%);
+            clip-path: circle(90vh at 135% -10%);
+  }
+  img.nav_background_img {
+    margin-top: 80%;
+    height: 200px;
+  }
+  .about-me {
+    top: -50px;
+    left: 130px;
+  }
+}
+
+@media (max-width: 1300px) and (min-width: 1000px) {
+  .nav_background {
+    width: 99vw;
+    -webkit-clip-path: circle(90vh at 85% -5%);
+            clip-path: circle(90vh at 85% -5%);
+  }
+  img.nav_background_img {
+    margin-right: 5rem;
+    height: 250px;
+  }
+} 
+
+
+/* show comment  */
+
+.comment_show{
+  position: relative;
+  height: 100%;
+  width: 100%; 
+}
+
+.comment_header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin:5px 5% ;
+  border-bottom: 1px solid var(--text-color);
+  padding: 10px;
+}
+
+.comment_header .right{
+  height: 40px;
+  width: 40px;
+  border: 2px solid var(--text-color);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  position: relative; 
+
+}
+
+.comment_header .right svg{
+  position: absolute;
+  width: 60%;
+  height: 60%;
+  fill: var(--text-color);
+}
+
+.comment_body{ 
+  margin: 5px 10%; 
+  display: flex; 
+}
+
+.comment_logo{
+  height: 40px;
+  width: 40px;
+  border: 2px solid var(--text-color);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  position: relative;
+  margin-top: 10px;
+}
+
+.comment_logo svg{
+  position: absolute;
+  width: 60%;
+  height: 60%;
+  fill: var(--text-color);
+}
+
+.comment_box{ 
+  transform: translateX(20px); 
+  padding: 10px; 
+}
+ 
+.comment_box p{ 
+  word-break: break-all;
+}
+
+
+
+
+
+

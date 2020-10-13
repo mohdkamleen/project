@@ -1,0 +1,287 @@
+
+         Assignment Two
+
+1. Write a program in c to find greatest number between three numbers.
+            #include<stdio.h>
+            #include<conio.h>
+                 
+                int main()
+                {
+                    int num1, num2, num3;
+                 
+                    printf("enter first no: ", num1);
+                    scanf("%d", &num1);
+                
+                    printf("enter second no: ", num2);
+                    scanf("%d", &num2);
+                
+                    printf("enter third no: ", num3);
+                    scanf("%d", &num3);
+                
+                
+                    if (num1 > num2)
+                    {
+                        if (num1 > num3)
+                        {
+                            printf("%d is greatest num.", num1);
+                        }
+                        else
+                        {
+                           printf("%d is greatest num.", num3);
+                        }
+                    }
+                    else if (num2 > num3)
+                        printf("%d is greatest num.", num2);
+                    else
+                        printf("%d is greatest num.", num3);
+                
+                        return 0;
+                }
+        
+2. Write a program in c to find odd & even number.
+
+        #include <stdio.h>
+            int main() {
+                int num;
+                printf("enter integer no: ");
+                scanf("%d", &num);
+            
+                if(num % 2 == 0) {
+                    printf("%d is even.", num);
+                } else {
+                    printf("%d is odd.", num);
+                }
+                
+                return 0;
+            }
+
+     
+3. Write a program in c to check entered number is positive or negative.
+
+        #include <stdio.h>
+ 
+            void main()
+            {
+                int number;
+             
+                printf("enter a no: ");
+                scanf("%d", &number);
+
+                if (number >= 0) {
+                    printf("%d is a positive number \n", number);
+                 } else {
+                    printf("%d is a negative number \n", number);
+                 }
+            }
+
+    
+4. Write a program in c to enter year and check input year is leap year or not.
+
+    #include <stdio.h>
+
+        int main()
+        {
+            int year;
+        
+            printf("enter year : ");
+            scanf("%d", &year);
+        
+        
+            if(year % 4 == 0)
+            {
+                printf("leap year");
+            }
+            else
+            {
+                printf("genral year");
+            }
+        
+            return 0;
+        }
+
+     
+5. Write a program in c to check that give character is vowel or consonant.
+
+        #include <stdio.h>
+
+            int main()
+            {
+                char chr;
+            
+                printf("enter char: ");
+                scanf("%c", &chr);
+            
+            
+                if(chr == 'a' || chr == 'A' || chr == 'e' || 
+                   chr == 'E' || chr == 'i' || chr == 'I' || 
+                   chr == 'o' || chr == 'O' || chr == 'u' || chr == 'U' )
+                {
+                    printf("char is vovel.");
+                }
+                else
+                {
+                    printf("char is consonant");
+                }
+            
+                return 0;
+            }
+
+     
+
+
+6. Write a program in c to input a character and check character is in uppercase or in lowercase.
+            
+        #include<stdio.h>
+ 
+    int main() {
+       char chr;
+     
+       printf("\nEnter The Character : ");
+       scanf("%c", &chr);
+     
+       if (chr >= 'A' && chr <= 'Z')
+          printf("Character is Upper Case ");
+       else
+          printf("Character is  Lower Case ");
+     
+       return (0);
+    }
+
+     
+7. Write a program in c to find greatest number between four number using ternary operator.
+     
+#include <stdio.h> 
+
+  int main() 
+  { 
+      int n1, n2, n3, n4, max; 
+
+       printf("enter 1st no: ");
+       scanf("%d",&n1);
+
+       printf("enter 2nd no: ");
+       scanf("%d",&n2);
+
+       printf("enter 3rd no: ");
+       scanf("%d",&n3);
+
+       printf("enter 4th no: ");
+       scanf("%d",&n4);
+        
+      max = (n1 > n2 && n1 > n3 && n1 > n4) ?  
+                                     n1 :  
+                                       ((n2 > n3 && n2 > n4) ?  
+                                                           n2 :  
+                                                            (n3 > n4 ? n3 : n4)); 
+        
+      printf("Largest number is %d.", max); 
+    
+      return 0; 
+  }
+   
+9. Write a program in C to print week day according to day number.
+
+        #include<stdio.h>
+     
+            int main()
+                {
+                   
+                    int day;
+        
+                    printf("enter day no: ");
+                    scanf("%d",&day);
+                   
+                    
+                    switch (day)
+                    {
+                    case 1:
+                        printf("Monday");
+                        break;
+        
+                    case 2:
+                        printf("Tuesday");
+                        break;
+        
+                    case 3:
+                        printf("Wednesday");
+                        break;
+        
+                     case 4:
+                        printf("Thirsday");
+                        break;
+        
+                    case 5:
+                        printf("Friday");
+                        break;
+        
+                    case 6:
+                        printf("Sturday");
+                        break;
+        
+                    case 7:
+                        printf("Sunday");
+                        break;
+                    
+                    default:
+                        printf("Defaul day no.");
+                        break;
+                    }
+                
+                        return 0;
+                }        
+
+     
+10. Write a program in c to calculate mathematical operations using switch case.
+
+    #include<stdio.h>
+    #include<conio.h>
+         
+    int main()
+        {
+           
+            int num1, add, mul, sub;
+            char oprator;
+            float num2, div;
+
+            printf("enter oprator: ",oprator);
+            scanf("%c",&oprator);
+           
+            printf("enter first no: ");
+            scanf("%d",&num1);
+
+            printf("enter second no: ");
+            scanf("%f", &num2); 
+
+            add = num1 + num2;
+            sub = num1 - num2;
+            mul = num1 * num2;
+            div = num1 / num2;
+
+            switch (oprator)
+            {
+            case '+':
+                printf("addition is: %d", add);
+                break;
+
+            case '-':
+                printf("subtretion is: %d", sub);
+                break;
+
+            case '*':
+                printf("multiplication is: %d", mul);
+                break;
+
+            case '/':
+                printf("division is: %f", div);
+                break;
+            
+            default:
+                printf("default oprator.");
+                break;
+            }
+        
+                return 0;
+        }
+
+
+  

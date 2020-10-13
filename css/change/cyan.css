@@ -1,0 +1,42 @@
+:root {
+  --text-color: #569ea5;
+  --radial-gradient: radial-gradient(rgba(175, 243, 248, 0.4),rgba(224, 224, 224, 0.8));
+  --font-family: 'Short Stack';
+  --box-shadow: -4px -4px 10px rgba(255, 255, 255, 1),
+                  inset -4px 4px 10px rgba(169, 229, 233, 0.5), 
+                  inset -4px -4px 10px rgba(255, 255, 255, 1), 
+                  4px 4px 10px rgba(197, 245, 253, 0.5);
+}
+
+body {
+  overflow-x: hidden;
+  font-family: var(--font-family);
+  background: #dcfdff;
+}
+
+h3 {
+  background: -webkit-gradient(linear, left top, left bottom, from(#00d9ff), to(white));
+  background: linear-gradient(#00d9ff, white);
+  color: transparent;
+  -webkit-background-clip: text;
+}
+
+.nav_background {
+  background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(#88fff9));
+  background: linear-gradient(to bottom, transparent, #88fff9);
+}
+
+.container2 h4 {
+  background: -webkit-gradient(linear, left top, left bottom, from(#18deec), to(white));
+  background: linear-gradient(#18deec, white);
+  color: transparent;
+  -webkit-background-clip: text;
+}
+
+.container h4 {
+  background: -webkit-gradient(linear, left top, left bottom, from(white), to(#17fcdd));
+  background: linear-gradient(white, #17fcdd);
+  color: transparent;
+  -webkit-background-clip: text;
+}
+/*# sourceMappingURL=cyan.css.map */

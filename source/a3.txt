@@ -1,0 +1,143 @@
+
+Assignment Two
+
+1. Write a program in c generate Fibonacci series up to given number.
+
+            #include <stdio.h>
+                int main() {
+                    int i, n, t1 = 0, t2 = 1, nextTerm;
+                    printf("Enter the number of terms: ");
+                    scanf("%d", &n);
+                    printf("Fibonacci Series: ");
+                
+                    for (i = 1; i <= n; ++i) {
+                        printf("%d, ", t1);
+                        nextTerm = t1 + t2;
+                        t1 = t2;
+                        t2 = nextTerm;
+                    }
+                
+                    return 0;
+                }
+        
+2. Write a program in c to reverse the digit of a given number.
+
+        #include <stdio.h>
+        int main() 
+        { 
+            int num, result;
+            
+            printf("enter no: ");
+            scanf("%d", &num);
+
+            result = num;
+            
+            printf("Reverse no is %d", result); 
+          
+            return 0; 
+        } 
+
+     
+3. Write a program in c to make a table of a given number.
+
+        #include <stdio.h>
+        int main()
+        {
+            int num, result;
+
+            printf("enter no: ");
+            scanf("%d", &num);
+
+            for(int i = 1; i <= 10; i++){
+                result = num * i;
+                printf("%d * %d = %d \n",num, i, result);
+            }
+
+            return 0;
+        }
+ 
+     
+4. Write a program in c to find the factorial of given number.
+
+    #include <stdio.h>
+ 
+    int main() {
+    int n, fact = 1;
+    printf("Enter an integer: ");
+    scanf("%d", &n);
+
+    if (n < 0) {
+        printf("negative number doesn't exist.");
+     } else {
+        for (int i = 1; i <= n; ++i) {
+            fact *= i;
+        }
+        printf("factorial of %d is = %d", n, fact);
+    }
+
+    return 0;
+    }
+
+    
+5. Write a program in c to sum of digits of a given number.
+
+    #include <stdio.h>
+
+        int main()
+        {
+            int num, sum=0;
+        
+            printf("enter number: ");
+            scanf("%d", &num);
+        
+            while(num!=0)
+            {
+                sum += num % 10;
+                num = num / 10;
+            }
+        
+            printf("sum of digits = %d", sum);
+        
+            return 0;
+        }
+
+     
+9. Write a program in c to print all alphabet from a to z.
+
+        #include <stdio.h>
+
+        int main()
+        {
+            char ch;
+        
+            printf("prints alphabets: \n");
+            for(ch='a'; ch<='z'; ch++)
+            {
+                printf("%c\n", ch);
+            }
+        
+            return 0;
+        }
+
+     
+
+
+10. WAP in C to print Even number up to given number.
+            
+        #include<stdio.h>
+        void main()
+        {
+             int i,n;
+        
+             printf("enter number: ");
+             scanf(" %d",&n);
+        
+             printf("even numbers up to inputted number are - ");
+        
+             for(i=2;i<=n;i+=2)
+             {
+                     printf(" %d \n",i);
+             }
+        } 
+
+     
